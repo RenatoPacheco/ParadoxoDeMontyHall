@@ -16,7 +16,7 @@ List<Porta> portas;
 
 for (int i = 0; i < quantidadeDeTentativas; i++)
 {
-    portas = Porta.PrepararPortas(quantidadesDePortas);
+    portas = Porta.PrepararPortas(quantidadesDePortas).ToList();
 
     foreach (Cenario item in cenarios)
     {

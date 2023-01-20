@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ParadoxoDeMontyHall.Core
+﻿namespace ParadoxoDeMontyHall.Core
 {
     static class Extensoes
     {
