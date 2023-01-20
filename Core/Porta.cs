@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ParadoxoDeMontyHall.Core
+﻿namespace ParadoxoDeMontyHall.Core
 {
     public class Porta
     {
@@ -26,7 +23,7 @@ namespace ParadoxoDeMontyHall.Core
             return resultado;
         }
 
-        public string Letra { get; set; }
+        public string Letra { get; set; } = "empty";
 
         public bool Premiada { get; set; }
 

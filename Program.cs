@@ -1,9 +1,7 @@
-﻿using System;
-using ParadoxoDeMontyHall.Core;
-using System.Collections.Generic;
+﻿using ParadoxoDeMontyHall.Core;
 using ParadoxoDeMontyHall.Core.Participantes;
 
-List<Cenario> cenarios = new List<Cenario>
+List<Cenario> cenarios = new()
 {
     new Cenario(new EscolhaSemTrocaPart(), "A"),
     new Cenario(new EscolhaUmETrocaSoNoFinalPart(), "B"),

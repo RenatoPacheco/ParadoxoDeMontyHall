@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ParadoxoDeMontyHall.Core
+﻿namespace ParadoxoDeMontyHall.Core
 {
     public static class Randonico
     {

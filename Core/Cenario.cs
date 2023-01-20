@@ -1,9 +1,6 @@
-﻿using ParadoxoDeMontyHall.Core.Participantes;
-using System;
-using System.Collections.Generic;
+﻿using System.Text;
+using ParadoxoDeMontyHall.Core.Participantes;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
 
 namespace ParadoxoDeMontyHall.Core
 {
@@ -86,7 +83,7 @@ namespace ParadoxoDeMontyHall.Core
         private List<Porta> AbrirUmaPorta(List<Porta> portas)
         {
             List<Porta> portasParaAbrir = portas.Where(
-               x => x.Letra != _participante.PortaEscolhida.Letra
+               x => x.Letra != _participante.PortaEscolhida?.Letra
                && x.Premiada == false).ToList();
 
             int posicaoAberta = Randonico.Next(0, portasParaAbrir.Count);

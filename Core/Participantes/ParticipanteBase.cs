@@ -9,9 +9,9 @@ namespace ParadoxoDeMontyHall.Core.Participantes
         [Display(Name = "Historico de portas")]
         public Porta[] HistoricoDePortas => _historicoDePortas.ToArray();
 
-        private Porta _portaEscolhida;
+        private Porta? _portaEscolhida;
         [Display(Name = "Porta escolhida")]
-        public Porta PortaEscolhida
+        public Porta? PortaEscolhida
         {
             get => _portaEscolhida;
             set
@@ -44,7 +44,7 @@ namespace ParadoxoDeMontyHall.Core.Participantes
             _portaEscolhida = null;
         }
 
-        public abstract Porta EscolherUmaPorta(List<Porta> opcoes);
+        public abstract Porta? EscolherUmaPorta(List<Porta> opcoes);
 
         public bool FoiPremiado()
         {

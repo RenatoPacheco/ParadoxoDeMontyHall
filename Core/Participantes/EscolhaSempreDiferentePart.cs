@@ -1,14 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace ParadoxoDeMontyHall.Core.Participantes
+﻿namespace ParadoxoDeMontyHall.Core.Participantes
 {
     public class EscolhaSempreDiferentePart
         : ParticipanteBase
     {
         public override string Titulo => "Escolher sempre uma porta que ainda não escolheu";
 
-        public override Porta EscolherUmaPorta(List<Porta> opcoes)
+        public override Porta? EscolherUmaPorta(List<Porta> opcoes)
         {
             opcoes = opcoes.Where(x => !HistoricoDePortas.Any(y => y.Letra == x.Letra)).ToList();
             if (opcoes.Any())

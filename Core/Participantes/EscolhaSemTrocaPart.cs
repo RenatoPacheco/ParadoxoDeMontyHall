@@ -1,13 +1,11 @@
-﻿using System.Collections.Generic;
-
-namespace ParadoxoDeMontyHall.Core.Participantes
+﻿namespace ParadoxoDeMontyHall.Core.Participantes
 {
     public class EscolhaSemTrocaPart
         : ParticipanteBase
     {
         public override string Titulo => "Fazer uma escolha e não trocar mais";
 
-        public override Porta EscolherUmaPorta(List<Porta> opcoes)
+        public override Porta? EscolherUmaPorta(List<Porta> opcoes)
         {
             if (PortaEscolhida is null)
             {

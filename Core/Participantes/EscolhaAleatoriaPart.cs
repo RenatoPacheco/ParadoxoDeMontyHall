@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ParadoxoDeMontyHall.Core.Participantes
+﻿namespace ParadoxoDeMontyHall.Core.Participantes
 {
     public class EscolhaAleatoriaPart
         : ParticipanteBase
