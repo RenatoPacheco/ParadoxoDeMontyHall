@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System.Text;
+﻿using System.Text;
 
 namespace ParadoxoDeMontyHall.Core
 {
@@ -7,7 +6,7 @@ namespace ParadoxoDeMontyHall.Core
     {
         public Relatorio(Cenario cenario, Porta preimiada)
         {
-            Cenario = $"{cenario.Referencia}{(cenario.Relatorios.Count() + 1)}";
+            Cenario = $"{cenario.Referencia}{cenario.Relatorios.Count() + 1}";
             Titulo = $"{cenario.Referencia} - {cenario.Titulo}";
             FoiPremiado = cenario.Participante.FoiPremiado();
             PortaEscolhida = cenario.Participante.PortaEscolhida?.ToString() ?? "empty";
@@ -29,7 +28,7 @@ namespace ParadoxoDeMontyHall.Core
 
         public override string ToString()
         {
-            StringBuilder resultado = new StringBuilder();
+            StringBuilder resultado = new();
 
             resultado.Append($"\n - Cenario: {Cenario}");
             resultado.Append($"\n - {Titulo}");

@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ParadoxoDeMontyHall.Core.Participantes
 {
     public abstract class ParticipanteBase
     {
-        private readonly List<Porta> _historicoDePortas = new List<Porta>();
+        private readonly List<Porta> _historicoDePortas = new();
         [Display(Name = "Historico de portas")]
         public Porta[] HistoricoDePortas => _historicoDePortas.ToArray();
 
