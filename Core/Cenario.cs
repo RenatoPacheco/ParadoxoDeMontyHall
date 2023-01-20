@@ -1,8 +1,8 @@
-﻿using System;
-using System.Linq;
+﻿using ParadoxoDeMontyHall.Core.Participantes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using ParadoxoDeMontyHall.Core.Participantes;
+using System.Linq;
 using System.Text;
 
 namespace ParadoxoDeMontyHall.Core
@@ -46,7 +46,7 @@ namespace ParadoxoDeMontyHall.Core
             Porta premiada = opcoes.Where(x => x.Premiada).First();
             _participante.Limpar();
 
-            while(opcoes.Count > 2)
+            while (opcoes.Count > 2)
             {
                 _participante.EscolherUmaPorta(opcoes);
                 opcoes = AbrirUmaPorta(opcoes);
