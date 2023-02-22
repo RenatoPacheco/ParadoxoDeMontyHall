@@ -1,6 +1,6 @@
 ﻿using System.Text;
-using ParadoxoDeMontyHall.Core.Participantes;
 using System.ComponentModel.DataAnnotations;
+using ParadoxoDeMontyHall.Core.Participantes;
 
 namespace ParadoxoDeMontyHall.Core
 {
@@ -9,7 +9,7 @@ namespace ParadoxoDeMontyHall.Core
         public Cenario(ParticipanteBase participante, string referencia)
         {
             if (participante is null)
-                throw new ArgumentException("Valo não pode ser nulo", nameof(participante));
+                throw new ArgumentException("Valor não pode ser nulo", nameof(participante));
 
             Participante = participante;
             Referencia = referencia;
@@ -34,7 +34,7 @@ namespace ParadoxoDeMontyHall.Core
         public Relatorio Executar(List<Porta> portas)
         {
             if (portas.Count < 3)
-                throw new ArgumentException("Valor não pode ser nulo, ou ter menos de 3 itens", nameof(Porta));
+                throw new ArgumentException("Valor não pode ser nulo, ou ter menos de 3 itens", nameof(portas));
 
             List<Porta> opcoes = portas.GetClone();
             Porta premiada = opcoes.Where(x => x.Premiada).First();
@@ -80,8 +80,8 @@ namespace ParadoxoDeMontyHall.Core
         private List<Porta> AbrirUmaPorta(List<Porta> portas)
         {
             List<Porta> portasParaAbrir = portas.Where(
-               x => x.Letra != Participante.PortaEscolhida?.Letra
-               && x.Premiada == false).ToList();
+                x => x.Letra != Participante.PortaEscolhida?.Letra
+                && x.Premiada == false).ToList();
 
             int posicaoAberta = Randonico.Next(0, portasParaAbrir.Count);
             portas.Remove(portasParaAbrir[posicaoAberta]);

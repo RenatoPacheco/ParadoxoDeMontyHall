@@ -30,6 +30,7 @@ namespace ParadoxoDeMontyHall.Core.Participantes
             }
         }
 
+        [Display(Name = "Título")]
         public abstract string Titulo { get; }
 
         public override string ToString()

@@ -3,7 +3,7 @@
     public class EscolhaSemTrocaPart
         : ParticipanteBase
     {
-        public override string Titulo => "Fazer uma escolha e não trocar mais";
+        public override string Titulo => "Escolher uma porta e não trocar mais";
 
         public override Porta? EscolherUmaPorta(List<Porta> opcoes)
         {

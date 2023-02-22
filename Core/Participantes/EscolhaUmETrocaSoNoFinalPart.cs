@@ -3,7 +3,7 @@
     public class EscolhaUmETrocaSoNoFinalPart
         : ParticipanteBase
     {
-        public override string Titulo => "Fazer uma escolha e trocar só no final";
+        public override string Titulo => "Escolher uma porta e trocar só no final";
 
         public override Porta? EscolherUmaPorta(List<Porta> opcoes)
         {

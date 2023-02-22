@@ -3,7 +3,7 @@
     public class EscolhaSemRepetirAhAnteriorPart
         : ParticipanteBase
     {
-        public override string Titulo => "Sempre escolher uma diferente da atual";
+        public override string Titulo => "Sempre escolher uma porta diferente da atual";
 
         public override Porta? EscolherUmaPorta(List<Porta> opcoes)
         {

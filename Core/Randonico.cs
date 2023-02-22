@@ -2,7 +2,7 @@
 {
     public static class Randonico
     {
-        private static readonly Random _rdn = new Random();
+        private static readonly Random _rdn = new();
 
         public static int Next(int inicio, int quantidade)
         {
