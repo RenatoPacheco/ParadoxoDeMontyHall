@@ -25,7 +25,7 @@ namespace ParadoxoDeMontyHall.Core
         public string Referencia { get; }
 
         private readonly List<Relatorio> _relatorios = new();
-        [Display(Name = "Relatorios")]
+        [Display(Name = "Relatórios")]
         public Relatorio[] Relatorios => _relatorios.ToArray();
 
         public void Limpar()
