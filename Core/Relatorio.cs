@@ -7,7 +7,7 @@ namespace ParadoxoDeMontyHall.Core
     {
         public Relatorio(Cenario cenario, Porta preimiada)
         {
-            Cenario = $"{cenario.Referencia}{cenario.Relatorios.Count() + 1}";
+            Cenario = $"{cenario.Referencia}{cenario.Relatorios.Length + 1}";
             Titulo = $"{cenario.Referencia} - {cenario.Titulo}";
             FoiPremiado = cenario.Participante.FoiPremiado();
             PortaEscolhida = cenario.Participante.PortaEscolhida?.ToString() ?? "empty";

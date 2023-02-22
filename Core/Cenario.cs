@@ -18,8 +18,10 @@ namespace ParadoxoDeMontyHall.Core
 
         public ParticipanteBase Participante { get; }
 
+        [Display(Name = "Título")]
         public string Titulo { get; }
 
+        [Display(Name = "Referência")]
         public string Referencia { get; }
 
         private readonly List<Relatorio> _relatorios = new();
