@@ -10,9 +10,8 @@ List<Cenario> cenarios = new()
     new Cenario(new EscolhaSemRepetirAhAnteriorPart(), "E")
 };
 int quantidadeDeTentativas = 20000;
-int quantidadesDePortas = 3;
+int quantidadesDePortas = 5;
 List<Porta> portas;
-
 
 for (int i = 0; i < quantidadeDeTentativas; i++)
 {
