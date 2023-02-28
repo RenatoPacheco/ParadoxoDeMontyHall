@@ -1,6 +1,6 @@
 # Paradoxo de Monty Hall
 
-Rodando o jogo com 5 cenários:
+Rodando o jogo com 5 opções de portas, em 5 cenários, fazendo 20 mil jogos cada:
 
 ```shell
 dotnet run ParadoxoDeMontyHall.csproj
@@ -9,17 +9,17 @@ dotnet run ParadoxoDeMontyHall.csproj
 Aqui, um exemplo dos resultados:
 
 ```shel
-A - Escolher uma porta e não trocar mais
-
-Total 20000 (100%)
-Total de acertos 4025 (20,125%)
-Total de erros 15975 (79,875%)
-
-B - Escolher uma porta e trocar só no final
+A - Escolher uma porta e trocar só no final
 
 Total 20000 (100%)
 Total de acertos 16046 (80,23%)
 Total de erros 3954 (19,77%)
+
+B - Escolher uma porta e não trocar mais
+
+Total 20000 (100%)
+Total de acertos 4025 (20,125%)
+Total de erros 15975 (79,875%)
 
 C - Escolha aleatória de portas
 

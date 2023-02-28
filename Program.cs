@@ -3,8 +3,8 @@ using ParadoxoDeMontyHall.Core.Participantes;
 
 List<Cenario> cenarios = new()
 {
-    new Cenario(new EscolhaSemTrocaPart(), "A"),
-    new Cenario(new EscolhaUmETrocaSoNoFinalPart(), "B"),
+    new Cenario(new EscolhaUmETrocaSoNoFinalPart(), "A"),
+    new Cenario(new EscolhaSemTrocaPart(), "B"),
     new Cenario(new EscolhaAleatoriaPart(), "C"),
     new Cenario(new EscolhaSempreDiferentePart(), "D"),
     new Cenario(new EscolhaSemRepetirAhAnteriorPart(), "E")
