@@ -11,6 +11,9 @@ namespace ParadoxoDeMontyHall.Core
             if (participante is null)
                 throw new ArgumentException("Valor não pode ser nulo", nameof(participante));
 
+            if (string.IsNullOrWhiteSpace(referencia))
+                throw new ArgumentException("Valor não pode ser nulo ou vazio", nameof(referencia));
+
             Participante = participante;
             Referencia = referencia;
             Titulo = participante.Titulo;
